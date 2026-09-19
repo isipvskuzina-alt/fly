@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// ─────────────────────────── Цвета (розово-фиолетовая палитра) ───────────────────────────
 const Color kPink = Color(0xFFE754B5);
 const Color kPinkDeep = Color(0xFF9B3FD1);
 const Color kPinkSoft = Color(0xFFF4A8E0);
@@ -36,7 +35,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ─────────────────────────── Корневой экран ───────────────────────────
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
 
@@ -108,9 +106,7 @@ class _RootPageState extends State<RootPage> {
   }
 }
 
-// ─────────────────────────── Общие виджеты ───────────────────────────
 
-/// Прозрачный InkWell поверх содержимого: розовая волна при нажатии.
 class TapBox extends StatelessWidget {
   const TapBox({super.key, required this.child, this.radius = 16});
 
@@ -138,7 +134,6 @@ class TapBox extends StatelessWidget {
   }
 }
 
-/// Круглая заглушка аватара.
 class AvatarBox extends StatelessWidget {
   const AvatarBox({super.key, this.size = 48});
 
@@ -704,7 +699,6 @@ class PillButton extends StatelessWidget {
   }
 }
 
-// ─────────────────────────── Макет 1: Начало ───────────────────────────
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -758,7 +752,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          // кнопки строго по центру экрана
+
           const Center(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 24),
@@ -789,7 +783,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          // низ: сердечки и звёздочка
+
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
@@ -821,7 +815,7 @@ class WelcomeScreen extends StatelessWidget {
   }
 }
 
-// ─────────────────────────── Макет 2: Задания ───────────────────────────
+
 class TasksScreen extends StatelessWidget {
   const TasksScreen({super.key});
 
@@ -917,7 +911,7 @@ class TasksScreen extends StatelessWidget {
   }
 }
 
-// ─────────────────────────── Макет 3: Сумочка с деньгами ───────────────────────────
+
 class WalletScreen extends StatelessWidget {
   const WalletScreen({super.key});
 
@@ -1156,7 +1150,6 @@ class WalletScreen extends StatelessWidget {
   }
 }
 
-// ─────────────────────────── Макет 4: Профиль ───────────────────────────
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
